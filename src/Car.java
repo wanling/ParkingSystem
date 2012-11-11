@@ -6,17 +6,22 @@
  * To change this template use File | Settings | File Templates.
  */
 public class Car {
-    private  String name;
-    public Car(String s) {
+    private  String id;
+    public Ticket ticket;
+    public Car(Ticket s) {
         //To change body of created methods use File | Settings | File Templates.
-        name = s;
+        ticket = s;
+    }
+
+    public Ticket getTicket() {
+        return ticket;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.id = name;
     }
 
-    public String getName() {
-        return name;
+    public String getId() {
+        return id;
     }
 }
