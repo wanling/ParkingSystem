@@ -13,40 +13,32 @@ import java.util.Map;
  */
 public class Parking {
     private  int  emptyParingLot;
-    private List<Car> carList;
+    private Map<Ticket,Car> ticketCarMap;
+
 //    private Map<Ticket,Car> ticket_car_map;
 
     public Parking(int i) {
         emptyParingLot = i;
-        carList = new ArrayList<Car>();
-//        ticket_car_map = new HashMap<Ticket, Car>();
+        ticketCarMap = new HashMap<Ticket, Car>();
     }
 
     public int getEmptyParingLot() {
         return emptyParingLot;
     }
 
-    public String park(Car a) {
+    public  String park(Car a, Ticket b){
         if (emptyParingLot == 0){
             return "false";
         }
-        carList.add(a);
-        emptyParingLot --;
+        ticketCarMap.put(b,a);
+        emptyParingLot--;
         return "true";
-//       return  false;
-
     }
 
-    public Car getCar(Ticket carName) {
-        Car res = null;
-        for (Car car : carList)
-           if (car.getTicket().equals(carName)) {
-//            if (carName.equals(car.getId()))  {
-                res = car;
-                break;
-            }
+    public Car getCar(Ticket ticket) {
+        Car res = this.ticketCarMap.get(ticket);
         if (res != null){
-            carList.remove(res);
+            ticketCarMap.remove(ticket);
             emptyParingLot ++;
         }
         return res;  //To change body of created methods use File | Settings | File Templates.

@@ -2,8 +2,6 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.swing.text.StyledEditorKit;
-
 /**
  * Created with IntelliJ IDEA.
  * User: software
@@ -19,17 +17,19 @@ public class ParkTest {
     }
     @Test    //停车场有空车位，停车成功，空车位-1
     public void park_have_empty_port(){
-        Ticket t = new Ticket("bmw");
-        Car a = new Car(t);
-        String res = parkentity.park(a);
+        String bmw = "bmw";
+        Ticket t = new Ticket(bmw);
+        Car a = new Car();
+        String res = parkentity.park(a,t);
         Assert.assertEquals("true",res);
     }
 
     @Test     //停车场有一辆车，取车成功，空车位+1
     public void park_hava_a_car(){
-        Ticket t = new Ticket("N12345");
-        Car b = new Car(t);
-        parkentity.park(b);
+        String n12345 = "N12345";
+        Ticket t = new Ticket(n12345);
+        Car b = new Car();
+        parkentity.park(b,t);
         Car res =  parkentity.getCar(t);
         Assert.assertEquals(b,res);
     }
@@ -39,13 +39,14 @@ public class ParkTest {
         int len = parkentity.getEmptyParingLot();
         for (int i = 0; i < len; i++){
             Ticket t = new Ticket("Car"+i);
-            Car x = new Car(t);
-            parkentity.park(x);
+            Car x = new Car();
+            parkentity.park(x,t);
         }
    //     Assert.assertEquals(0,parkentity.getEmptyParingLot()) ;
-        Ticket t = new Ticket("world");
-        Car c =new Car(t);
-        String res = parkentity.park(c);
+        String world = "world";
+        Ticket t = new Ticket(world);
+        Car c =new Car();
+        String res = parkentity.park(c,t);
 
         Assert.assertEquals("false",res);
     }
@@ -53,7 +54,8 @@ public class ParkTest {
     @Test       //一个空的停车场，取车失败
     public void park_is_empty(){
         Car d = null;
-        Ticket t = new Ticket("M67890");
+        String m67890 = "M67890";
+        Ticket t = new Ticket(m67890);
         Car res = parkentity .getCar(t);
         Assert .assertEquals(d,res );
     }
@@ -63,10 +65,11 @@ public class ParkTest {
         String id = "XN12345";
         String resId = null;
         String equal = "false";
-        Ticket t = new Ticket("XN12345") ;
+        String xn12345 = "XN12345";
+        Ticket t = new Ticket(xn12345) ;
         Car res = parkentity.getCar(t);
         if (res != null)
-            resId = res.getId();
+            resId = res.getTicket().getId();
         if (id.equals(resId))
             equal = "true";
         Assert.assertEquals("false",equal );
@@ -76,8 +79,8 @@ public class ParkTest {
     public void a_valid_permit_can_get_the_car_once(){
         String id = "XN12345";
         Ticket t = new Ticket(id);
-        Car e = new Car(t);
-        parkentity.park(e);
+        Car e = new Car();
+        parkentity.park(e,t);
         Car res =  parkentity.getCar(t);
         Assert.assertEquals(e,res);
 
