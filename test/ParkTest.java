@@ -17,8 +17,8 @@ public class ParkTest {
     }
     @Test    //停车场有空车位，停车成功，空车位-1
     public void park_have_empty_port(){
-        String bmw = "bmw";
-        Ticket t = new Ticket(bmw);
+        String car1 = "京A12345";
+        Ticket t = new Ticket(car1);
         Car a = new Car();
         String res = parkentity.park(a,t);
         Assert.assertEquals("Park Successful",res);
@@ -26,8 +26,8 @@ public class ParkTest {
 
     @Test     //停车场有一辆车，取车成功，空车位+1
     public void park_hava_a_car(){
-        String n12345 = "N12345";
-        Ticket t = new Ticket(n12345);
+        String car2 = "京A23456";
+        Ticket t = new Ticket(car2);
         Car b = new Car();
         parkentity.park(b,t);
         Car res =  parkentity.getCar(t);
@@ -43,8 +43,8 @@ public class ParkTest {
             parkentity.park(x,t);
         }
    //     Assert.assertEquals(0,parkentity.getEmptyParingLot()) ;
-        String world = "world";
-        Ticket t = new Ticket(world);
+        String car3 = "京A34567";
+        Ticket t = new Ticket(car3);
         Car c =new Car();
         String res = parkentity.park(c,t);
 
@@ -53,30 +53,30 @@ public class ParkTest {
 
     @Test       //一个空的停车场，取车失败
     public void park_is_empty(){
-        String m67890 = "M67890";
-        Ticket t = new Ticket(m67890);
+        String car4 = "京A45678";
+        Ticket t = new Ticket(car4);
         Car res = parkentity .getCar(t);
         Assert .assertEquals(null,res );
     }
 
     @Test         //用有效的停车凭证可以取到车，用无效的停车凭证不能取到车
     public  void get_car_with_invalid_permit(){
-        String xn12345 = "XN12345";
-        Ticket t = new Ticket(xn12345) ;
+        String car4 = "京A56789";
+        Ticket t = new Ticket(car4) ;
         Car res = parkentity.getCar(t);
         Assert.assertEquals(null,res);
     }
 
     @Test   //有效的停车凭证不能取两次车
     public void a_valid_permit_can_get_the_car_once(){
-        String id = "XN12345";
-        Ticket t = new Ticket(id);
+        String car5 = "京A67890";
+        Ticket t = new Ticket(car5);
         Car e = new Car();
         parkentity.park(e,t);
-        Car res =  parkentity.getCar(t);
-        Assert.assertEquals(e,res);
+        Car res1 =  parkentity.getCar(t);
+        Assert.assertEquals(e,res1);
 
-        Car secres =  parkentity.getCar(t);
-        Assert.assertEquals(null,secres);
+        Car res2 =  parkentity.getCar(t);
+        Assert.assertEquals(null,res2);
     }
 }
