@@ -58,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ParkTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ParkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="29" selection-start="2398" selection-end="2408" vertical-scroll-proportion="0.52307695">
+            <state line="25" column="38" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +72,7 @@
       <file leaf-file-name="Ticket.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ticket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="14" selection-start="584" selection-end="590" vertical-scroll-proportion="0.0">
+            <state line="17" column="45" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,16 +81,16 @@
       <file leaf-file-name="Parking.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Parking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="11" column="46" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Car.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Car.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+            <state line="10" column="53" selection-start="201" selection-end="201" vertical-scroll-proportion="0.3653846">
               <folding />
             </state>
           </provider>
@@ -107,8 +107,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Ticket.java" />
-        <option value="$PROJECT_DIR$/src/Parking.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
+        <option value="$PROJECT_DIR$/src/Parking.java" />
         <option value="$PROJECT_DIR$/test/ParkTest.java" />
       </list>
     </option>
@@ -254,29 +254,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.ParkTest.park_with_not_emptyPark">
-    <configuration default="false" name="ParkTest.get_car_with_invalid_permit" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ParkManagement" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkTest" />
-      <option name="METHOD_NAME" value="get_car_with_invalid_permit" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ParkTest.a_valid_permit_can_get_the_car_once">
     <configuration default="false" name="ParkTest.a_valid_permit_can_get_the_car_once" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ParkManagement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -350,6 +328,28 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkTest" />
       <option name="METHOD_NAME" value="park_with_not_emptyPark" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParkTest.park_have_empty_port" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ParkManagement" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParkTest" />
+      <option name="METHOD_NAME" value="park_have_empty_port" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -483,11 +483,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.get_car_with_invalid_permit" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.a_valid_permit_can_get_the_car_once" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.park_hava_a_car" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.park_with_not_emptyPark" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.a_valid_permit_can_get_the_car_once" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.park_hava_a_car" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.park_with_not_emptyPark" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.park_have_empty_port" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -510,7 +510,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5441989" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34530386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -595,33 +595,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/ParkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="14" selection-start="584" selection-end="590" vertical-scroll-proportion="0.0">
+        <state line="17" column="45" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Parking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+        <state line="11" column="46" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+        <state line="10" column="53" selection-start="201" selection-end="201" vertical-scroll-proportion="0.3653846">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ParkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="29" selection-start="2398" selection-end="2408" vertical-scroll-proportion="0.52307695">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

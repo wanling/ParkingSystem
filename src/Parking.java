@@ -15,8 +15,6 @@ public class Parking {
     private  int  emptyParingLot;
     private Map<Ticket,Car> ticketCarMap;
 
-//    private Map<Ticket,Car> ticket_car_map;
-
     public Parking(int i) {
         emptyParingLot = i;
         ticketCarMap = new HashMap<Ticket, Car>();
@@ -28,11 +26,11 @@ public class Parking {
 
     public  String park(Car a, Ticket b){
         if (emptyParingLot == 0){
-            return "false";
+            return "Park Failure";
         }
         ticketCarMap.put(b,a);
         emptyParingLot--;
-        return "true";
+        return "Park Successful";
     }
 
     public Car getCar(Ticket ticket) {

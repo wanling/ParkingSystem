@@ -13,7 +13,7 @@ public class ParkTest {
     Parking parkentity;
     @Before
     public void init() {
-        parkentity = new Parking(10);
+        parkentity = new Parking(100);
     }
     @Test    //停车场有空车位，停车成功，空车位-1
     public void park_have_empty_port(){
@@ -21,7 +21,7 @@ public class ParkTest {
         Ticket t = new Ticket(bmw);
         Car a = new Car();
         String res = parkentity.park(a,t);
-        Assert.assertEquals("true",res);
+        Assert.assertEquals("Park Successful",res);
     }
 
     @Test     //停车场有一辆车，取车成功，空车位+1
@@ -48,31 +48,23 @@ public class ParkTest {
         Car c =new Car();
         String res = parkentity.park(c,t);
 
-        Assert.assertEquals("false",res);
+        Assert.assertEquals("Park Failure",res);
     }
 
     @Test       //一个空的停车场，取车失败
     public void park_is_empty(){
-        Car d = null;
         String m67890 = "M67890";
         Ticket t = new Ticket(m67890);
         Car res = parkentity .getCar(t);
-        Assert .assertEquals(d,res );
+        Assert .assertEquals(null,res );
     }
 
     @Test         //用有效的停车凭证可以取到车，用无效的停车凭证不能取到车
     public  void get_car_with_invalid_permit(){
-        String id = "XN12345";
-        String resId = null;
-        String equal = "false";
         String xn12345 = "XN12345";
         Ticket t = new Ticket(xn12345) ;
         Car res = parkentity.getCar(t);
-        if (res != null)
-            resId = res.getTicket().getId();
-        if (id.equals(resId))
-            equal = "true";
-        Assert.assertEquals("false",equal );
+        Assert.assertEquals(null,res);
     }
 
     @Test   //有效的停车凭证不能取两次车
@@ -84,15 +76,7 @@ public class ParkTest {
         Car res =  parkentity.getCar(t);
         Assert.assertEquals(e,res);
 
-        String resStr = "NotNull";
         Car secres =  parkentity.getCar(t);
-        if  (secres == null)
-             resStr = "null";
-        Assert.assertEquals("null",resStr);
+        Assert.assertEquals(null,secres);
     }
-
-
-
-
-
 }
