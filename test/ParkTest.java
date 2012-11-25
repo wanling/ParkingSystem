@@ -2,6 +2,9 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: software
@@ -11,6 +14,7 @@ import org.junit.Test;
  */
 public class ParkTest {
     Parking parkentity;
+
     @Before
     public void init() {
         parkentity = new Parking(100);
@@ -79,4 +83,24 @@ public class ParkTest {
         Car res2 =  parkentity.getCar(t);
         Assert.assertEquals(null,res2);
     }
+
+    /**
+    *  多个停车场，停车
+    */
+    @Test
+    public void parkBoy_ShouldParkCar(){
+        int maxParkingNum = 20;
+        Car car = new Car();
+        List<Parking> parkList = new ArrayList<Parking>();
+        Parking park1 = new Parking(maxParkingNum);
+        Parking park2 = new Parking(10);
+        parkList.add(park1);
+        parkList.add(park2);
+        ParkingLots parkboy = new ParkingLots(parkList);
+        Ticket ticket = parkboy.parking(car);
+
+        Assert.assertEquals(maxParkingNum-1, park1.getEmptyParingLot());
+
+    }
+
 }

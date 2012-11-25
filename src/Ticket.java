@@ -6,7 +6,26 @@
  * To change this template use File | Settings | File Templates.
  */
 public class Ticket {
+    private Integer parkingLotNO;
     private  String id;
+
+    public Ticket(String id, Integer parkingLotNO) {
+        this.id = id;
+        this.parkingLotNO = parkingLotNO;
+    }
+
+    public Ticket(Integer id) {
+        parkingLotNO = id;
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public Ticket() {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public Integer getParkingLotNO() {
+        return parkingLotNO;
+    }
 
     public String getId() {
         return id;
