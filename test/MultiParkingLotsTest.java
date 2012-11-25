@@ -75,4 +75,14 @@ public class MultiParkingLotsTest {
 
     }
 
+    @Test
+    public void find_better_parking()
+    {
+        int curEmpty = parkingLots.getAvaiable();
+        Car car = new Car();
+        Ticket t = parkingLots.parkingSmart(car);
+
+        Assert.assertEquals(curEmpty-1,parkingLots.getAvaiable());
+    }
+
 }

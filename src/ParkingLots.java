@@ -48,4 +48,25 @@ public class ParkingLots {
         return  car;
        // return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public Ticket parkingSmart(Car car) {
+        int max = 0;
+        int ids = -1;
+        Ticket t = null;
+        for(Integer id :parkMap.keySet())
+        {
+             if(parkMap.get(id).getEmptyParingLot()>max)
+             {
+                 max = parkMap.get(id).getEmptyParingLot();
+                 ids = id;
+             }
+        }
+        if(ids!=-1)
+        {
+            t = new Ticket(ids);
+            parkMap.get(ids).park(car,t);
+            this.emptyCount--;
+        }
+        return t;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
