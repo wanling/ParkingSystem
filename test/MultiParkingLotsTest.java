@@ -85,4 +85,36 @@ public class MultiParkingLotsTest {
         Assert.assertEquals(curEmpty-1,parkingLots.getAvaiable());
     }
 
+    /**
+     * 两个停车场，
+     * 停在有最大空车位的停车场
+     * 成功停车
+     */
+    @Test
+    public void smartParkingStrateger(){
+        int curEmpty = parkingLots.getAvaiable();
+        ParkingStrategy ps = new SmartParking();
+       Car car = new Car();
+       Ticket t = parkingLots.parking(car, ps);
+
+       Assert.assertEquals(curEmpty-1, parkingLots.getAvaiable());
+    }
+
+    /**
+     * 两个停车场
+     * 停在最大空置率的停车场
+     * 成功停车
+     */
+    @Test
+    public void MaximumParking(){
+        int curEmpty = parkingLots.getAvaiable();
+        ParkingStrategy ps = new MaximumEmptyRateParking();
+        Car car = new Car();
+        Ticket t = parkingLots.parking(car, ps);
+
+        Assert.assertEquals(curEmpty-1,parkingLots.getAvaiable());
+    }
+
+
+
 }

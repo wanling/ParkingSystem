@@ -21,6 +21,19 @@ public class ParkingLots {
         }
     }
 
+    public Ticket parking(Car car, ParkingStrategy ps){
+       int PID = ps.getParking(parkMap);
+       if (PID != -1){
+          if (parkMap.get(PID).getEmptyParingLot() > 0){
+              Ticket t = new Ticket(PID);
+              parkMap.get(PID).park(car,t);
+              emptyCount --;
+              return  t;
+          }
+       }
+        return  null;
+    }
+
     public Ticket parking(Car car) {
         for (Integer id : parkMap.keySet()){
             Parking parking = parkMap.get(id);

@@ -62,10 +62,7 @@
         <entry file="file://$PROJECT_DIR$/test/ParkTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="51" column="22" selection-start="1411" selection-end="1414" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2562#2571#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,7 +70,7 @@
       <file leaf-file-name="MultiParkingLotsTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/MultiParkingLotsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="22" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.4474273">
+            <state line="114" column="66" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.9161148">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#435#444#0" expanded="true" />
@@ -82,10 +79,50 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MaximumEmptyRateParking.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MaximumEmptyRateParking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="50" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ParkingLots.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ParkingLots.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="54" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
+            <state line="25" column="40" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmartParking.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SmartParking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="20" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomParking.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RandomParking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="20" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParkingStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParkingStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="77" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,7 +142,7 @@
       <file leaf-file-name="Parking.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Parking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+            <state line="27" column="26" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,9 +170,13 @@
         <option value="$PROJECT_DIR$/src/Car.java" />
         <option value="$PROJECT_DIR$/test/ParkTest.java" />
         <option value="$PROJECT_DIR$/src/Ticket.java" />
-        <option value="$PROJECT_DIR$/src/Parking.java" />
-        <option value="$PROJECT_DIR$/test/MultiParkingLotsTest.java" />
+        <option value="$PROJECT_DIR$/src/ParkingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/SmartParking.java" />
+        <option value="$PROJECT_DIR$/src/RandomParking.java" />
         <option value="$PROJECT_DIR$/src/ParkingLots.java" />
+        <option value="$PROJECT_DIR$/src/Parking.java" />
+        <option value="$PROJECT_DIR$/src/MaximumEmptyRateParking.java" />
+        <option value="$PROJECT_DIR$/test/MultiParkingLotsTest.java" />
       </list>
     </option>
   </component>
@@ -171,16 +212,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParkManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParkManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -251,12 +288,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -276,55 +317,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MultiParkingLotsTest.find_better_parking">
-    <configuration default="false" name="MultiParkingLotsTest.twoEmptyParklotsParkCar" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ParkManagement" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MultiParkingLotsTest" />
-      <option name="METHOD_NAME" value="twoEmptyParklotsParkCar" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MultiParkingLotsTest.getCarByValidTicket" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ParkManagement" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MultiParkingLotsTest" />
-      <option name="METHOD_NAME" value="getCarByValidTicket" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MultiParkingLotsTest.MaximumParking">
     <configuration default="false" name="MultiParkingLotsTest.getCarNeverParking" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ParkManagement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -391,6 +388,50 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="MultiParkingLotsTest.smartParkingStrateger" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ParkManagement" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MultiParkingLotsTest" />
+      <option name="METHOD_NAME" value="smartParkingStrateger" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MultiParkingLotsTest.MaximumParking" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ParkManagement" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MultiParkingLotsTest" />
+      <option name="METHOD_NAME" value="MaximumParking" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -411,24 +452,6 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -457,6 +480,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -509,11 +550,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.twoEmptyParklotsParkCar" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.getCarByValidTicket" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.getCarNeverParking" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.twoEmptyParkinglotsParkCar" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.find_better_parking" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.getCarNeverParking" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.twoEmptyParkinglotsParkCar" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.find_better_parking" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.smartParkingStrateger" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MultiParkingLotsTest.MaximumParking" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -546,8 +587,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13936782" sideWeight="0.6878453" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3121547" sideWeight="0.9981884" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18318966" sideWeight="0.6906077" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30939227" sideWeight="0.9981884" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34530386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -619,47 +660,72 @@
         <state line="1477" column="0" selection-start="57930" selection-end="57930" vertical-scroll-proportion="0.042410713" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="32" selection-start="198" selection-end="210" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="37" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="198" selection-end="210" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ParkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1411" selection-end="1414" vertical-scroll-proportion="0.0">
+        <state line="51" column="22" selection-start="1411" selection-end="1414" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SmartParking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2562#2571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomParking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="20" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ParkingLots.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="54" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
+        <state line="25" column="40" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParkingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="77" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="26" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaximumEmptyRateParking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="50" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/MultiParkingLotsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="22" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.4474273">
+        <state line="114" column="66" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.9161148">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#435#444#0" expanded="true" />

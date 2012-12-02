@@ -13,11 +13,17 @@ import java.util.Map;
  */
 public class Parking {
     private  int  emptyParingLot;
+    private  int capacity;
     private Map<Ticket,Car> ticketCarMap;
 
     public Parking(int i) {
         emptyParingLot = i;
+        capacity = i;
         ticketCarMap = new HashMap<Ticket, Car>();
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
 
     public int getEmptyParingLot() {
